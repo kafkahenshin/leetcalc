@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+   
+* {
+    margin: 0;
+    padding:0;
+    font-family: Orbitron;
+    font-weight: normal;
+}
+/*#0058ca, #3f509c, #140d57, #00437a*/
+html{
+    background: linear-gradient(-45deg,#38023a, #140d57, #01343d);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button{
+    height: 55px;
+    width:55px;
+    font-size:16pt;
+    margin: 1px;
+    cursor: pointer;
+    align-self: center;
+    justify-self:center;
+    color: crimson;
+    background-color: transparent;
+}
+form{
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right:5px;
+    max-width: 62%;
+}
+.keypad{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap:5px;
+    font-weight: 800;
+}
+.zero{
+    grid-column: 1/ span 2;
+    width: 98%;
+}
+.equal-sign{
+    grid-column: 3/ span 2;
+    width: 98%;
+}
+#text-view{
+    background: linear-gradient(to bottom,cyan,skyblue); 
+    color:darkslategrey;   
+    font-size: 22px;
+    padding:2px 1px; 
+}
+#previous-exp{
+    background: linear-gradient(to top,cyan,skyblue); 
+    text-align:right;
+    color:rgb(184, 26, 26);
+    font-size: 20px;
+    padding:3px 1px;    
+}
+input{
+    border:none;
+    outline:none;
+}
+.calculator{
+    display: flex;
+    flex-flow:column; 
+    align-items: center;
+    box-shadow: 0 0 10px 3px rgb(7, 255, 243);
+    padding-top: 27px;
+    padding-bottom: 25px;
+  
+}
+.button:hover{
+    background-color: rgba(1, 238, 255, 0.1);
+}
+

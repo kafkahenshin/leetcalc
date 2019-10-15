@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/main.css">
+        
+    </head>
+    <body>
+        
+
+        
+        <div class="calculator">
+                <form name="form">
+                        <input id="text-view" name="textview" value="">
+                        <input id="previous-exp" name="previousexp" value="">
+                </form>         
+                <div class="keypad">
+                    <input class="button" type="button" value="c" onclick="clean()">
+                    <input class="button" type="button" value="<" onclick="bsp()">
+                    <input class="button" type="button" value="." onclick="insert('.')">
+                    <input class="button" type="button" value="÷" onclick="insert('/')">
+                
+                    <input class="button" type="button" value="1" onclick="insert('1')">
+                    <input class="button" type="button" value="2" onclick="insert('2')">
+                    <input class="button" type="button" value="3" onclick="insert('3')">
+                    <input class="button" type="button" value="×" onclick="insert('*')">
+                
+                    <input class="button" type="button" value="4" onclick="insert('4')">
+                    <input class="button" type="button" value="5" onclick="insert('5')">
+                    <input class="button" type="button" value="6" onclick="insert('6')">
+                    <input class="button" type="button" value="+" onclick="insert('+')">
+                
+                    <input class="button" type="button" value="7" onclick="insert('7')">
+                    <input class="button" type="button" value="8" onclick="insert('8')">
+                    <input class="button" type="button" value="9" onclick="insert('9')">
+                    <input class="button" type="button" value="-" onclick="insert('-')">
+                    <input class="button zero" type="button" value="0" onclick="insert('0')">
+                    <input class="button equal-sign" type="button" value="=" onclick="equals()">
+                             
+                </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
